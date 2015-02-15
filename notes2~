@@ -1,0 +1,100 @@
+new notes
+static pages
+MVC MODEL VIEW AND CONTROLER
+
+controller connect the db
+model how to interate with data
+view how to genearte and show the data
+
+config= configureation care about routes.rb definition how the route be
+
+rails console
+open the jieshiqi (based on rails)
+
+ruby: if just type fun name then fun is called... 
+like$ foo
+
+exit => exit the interprator
+#________________ end of the ruby__________
+
+rails server: start the server on local pc localhost + port#
+
+usually open the server run and let another editor to run
+
+rails server -p 4000
+
+compile some js and html to send to custorand let browser to run
+
+rails new lect1// generate a new rails application
+
+put html in the ./app/view
+
+
+mkdir pages
+
+make a page home.html.erb // erb is ruby thing 
+
+just a new page then how to get the page
+router is in config/locals/routes.rb
+
+Rails.application.routes.draw do
+	get "home", to: "pages#home"
+ # when we post a requst home then router ask the pages#home controller run, call home in the controller 
+then the controller call home and home fun find the home.html.erb to send to the broswer
+# before # is the folder in the pages, after # then html file in this folder. also call the home in the pages controller
+
+end
+
+
+in app/controllers/concerns/ build pages_controller.rb
+
+create a class PagesController <ApplicationController
+// here 
+
+
+
+root "pages#home" # then make home.html.rbl to be default home then don;t need def home
+
+
+if we just build number.html.erb then def five/six
+
+if we call it can't find number.html
+
+but if we add render "number" then it can find the correct template 
+
+
+in ruby x = 5, then "Hi #{x} " == Hi 5; thus {} just for get the val of the variable
+
+
+.erb means embedded ruby
+
+then html can be run ruby 
+
+
+in it we can use <%= @xxxx%> @xxxx get from the def fun
+
+<%=%> will show the value
+<%%> will run the ruby code inside
+
+
+#---------------------------------------
+https://github.com/rails-decal/hw1-sp15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
